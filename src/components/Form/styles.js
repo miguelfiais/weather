@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    padding: 40px;
-    gap: 20px;
+    >div:first-child{
+        padding: 20px;
+    }
     h1{
         color: #E7E7EB;
+        text-align: center;
     }
     svg{
         width: 200px;
         height: auto;
         color: #fff;
-        display: ${props => props.city && "none"};
+        display: ${props => props.city ? "none" : "block"};
+        margin: 0 auto;
     }
 `
 export const Form = styled.div`
@@ -22,6 +22,7 @@ export const Form = styled.div`
     width: 100%;
     display: flex;
     gap: 10px;
+    margin: 20px auto;
     input{
         width: 75%;
         padding-left: 10px;

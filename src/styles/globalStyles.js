@@ -7,9 +7,7 @@ const Global = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Raleway', sans-serif;
         outline: none;
-    }
-    body{
-        overflow: hidden;
+        list-style: none;
     }
     button{
         border: none;
