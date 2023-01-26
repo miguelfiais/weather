@@ -16,6 +16,11 @@ export const Container = styled.div`
         display: ${props => props.city ? "none" : "block"};
         margin: 0 auto;
     }
+    @media (max-width: 500px) {
+        h1{
+            font-size: 1.5em;
+        }
+    }
 `
 export const Form = styled.div`
     max-width: 400px;

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Container } from './styles'
+import { Container, Info, Title } from './styles'
 
 const CardDestaques = ({title, unity, data}) => {
   return (
     <Container>
-        <p>{title}</p>
-        <p><span>{data} </span>{unity}</p>
+        <Title>{title}</Title>
+        <Info><span>{data} </span>{unity}</Info>
     </Container>
   )
 }

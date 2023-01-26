@@ -9,24 +9,49 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    div{
+    >p{
+        font-weight: 700;
+    }
+    >div{
+        width: 100%;
         display: flex;
-        align-items: center;
         gap: 25px;
-        img{
-            width: 100px;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                font-weight: 600;
+            }
+            img{
+                width: 100px;
+            }
         }
     }
-    h2{
-        margin-top: -50px;
+    @media (max-width: 500px) {
+        padding: 10px;
     }
+   
 `
 export const Temp = styled.p`
-    font-weight: 500;
+    font-weight: 300;
     font-size: 100px;
     line-height: 169px;
     color: #E7E7EB;
     span{
         font-size: 36px;
+    }
+    @media (max-width: 500px) {
+        font-size: 70px;
+        span{
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 300px) {
+        font-size: 60px;
+        span{
+            font-size: 24px;
+        }
     }
 `

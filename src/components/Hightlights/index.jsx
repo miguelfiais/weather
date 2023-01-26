@@ -9,8 +9,8 @@ const Hightlights = ({data}) => {
       <BoxDestaques>
         <CardDestaques title="Wind Status" unity="mph" data={data.current.wind_mph}/>
         <CardDestaques title="Humidity" unity="%" data={data.current.humidity}/>
-        <CardDestaques title="Visibility" unity="miles" data={data.current.pressure_mb}/>
-        <CardDestaques title="Air Pressure" unity="mb" data={data.current.vis_miles}/>
+        <CardDestaques title="Visibility" unity="miles" data={data.current.vis_miles}/>
+        <CardDestaques title="Air Pressure" unity="mb" data={data.current.pressure_mb}/>
       </BoxDestaques>
     </Container>
   )

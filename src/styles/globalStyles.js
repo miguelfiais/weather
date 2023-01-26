@@ -9,6 +9,9 @@ const Global = createGlobalStyle`
         outline: none;
         list-style: none;
     }
+    body{
+        overflow-x: hidden;
+    }
     button{
         border: none;
     }
