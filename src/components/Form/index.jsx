@@ -15,7 +15,7 @@ const Form = () => {
 
   const getWeather = async () => {
     if(search){
-      const data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=aada5612c4ba4fa099f171902232201&q=${search}&days=5&aqi=no&alerts=no`).then(response => response.json())
+      const data = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=aada5612c4ba4fa099f171902232201&q=${search}&days=5&aqi=no&alerts=no`).then(response => response.json())
       if(data.error){
         setSearch("")
         return alert(data.error.message)
