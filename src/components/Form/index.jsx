@@ -15,13 +15,12 @@ const Form = () => {
 
   const getWeather = async () => {
     if(search){
-      const data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=aada5612c4ba4fa099f171902232201&q=${search}&days=6&aqi=no&alerts=no`).then(response => response.json())
+      const data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=aada5612c4ba4fa099f171902232201&q=${search}&days=5&aqi=no&alerts=no`).then(response => response.json())
       if(data.error){
         setSearch("")
         return alert(data.error.message)
       }
       setSearch("")
-      console.log(data)
       return setCity(data)
     }
     return alert("Nome da cidade é necessário")
