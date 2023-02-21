@@ -22,7 +22,7 @@ export const Container = styled.div`
         }
     }
 `
-export const Form = styled.div`
+export const Form = styled.form`
     max-width: 400px;
     width: 100%;
     display: flex;
