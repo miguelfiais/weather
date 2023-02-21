@@ -1,7 +1,7 @@
-import Form from "./components/Form"
+import Form from "../../components/Form"
 import { Container } from "./styles"
 
-const App = () => {
+const Home = () => {
   return (
     <Container>
         <Form />
@@ -9,4 +9,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Home
